@@ -7,7 +7,7 @@ const app = express();
 const stripe = new Stripe(process.env.CLAVE_PRIVADA);
 
 
-app.use(cors({ origin: "http://localhost:3000" }))
+app.use(cors({ origin: "https://sodulce-shop.netlify.app" }))
 app.use(express.json());
 
 app.post("/api/checkout", async (req, res) => {
